@@ -28,8 +28,8 @@ group :production, :staging do
 end
 
 group :development, :test do
-  gem "sqlite3-ruby", :require => "sqlite3"
-en
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+end
 
 
 # To use ActiveModel has_secure_password
