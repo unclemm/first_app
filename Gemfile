@@ -23,10 +23,13 @@ end
 gem 'jquery-rails', '2.0.2'
 
 #adding pg gem in the production environment to allow Rails to talk to Postgres
-group :production do
+group :production, :staging do
   gem 'pg', '0.12.2'
 end
 
+group :development, :test do
+  gem "sqlite3-ruby", :require => "sqlite3"
+en
 
 
 # To use ActiveModel has_secure_password
